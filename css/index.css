@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.toggle {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__section {
+  display: flex;
+}
+.nav__section li a {
+  padding: 20px 50px;
+  font-size: 30px;
+  font-weight: 200;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+.nav__section li {
+  list-style: none;
+  padding: 15px;
+}
+.logo {
+  margin: 20px 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  nav {
+    display: flex;
+    /* justify-content: space-around; */
+  }
+  .logo-toggle {
+    display: flex;
+  }
+  .toggle {
+    display: block;
+    font-size: 25px;
+    margin: 20px 30px;
+  }
+  .nav__section {
+    display: block;
+  }
+  .nav__section li {
+    padding: 0px;
+  }
+  .nav__section li a {
+    font-size: 19px;
+    padding: 10px 0;
+  }
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+  .action {
+    width: 145px;
+    height: 50px;
+  }
+}
+/* intro */
+.intro-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 480px) {
+  .intro-section {
+    display: block;
+    /* width: fit-content; */
+  }
+}
+/* left */
+.left-section {
+  width: 50%;
+}
+.left-section h3 {
+  font-size: 40px;
+  font-weight: 100;
+  padding: 30px;
+}
+.left-section h1 {
+  font-size: 80px;
+  padding-left: 30px;
+}
+.sub-headline {
+  padding: auto 30px;
+  font-size: 25px;
+  font-weight: 100;
+  margin-left: 20%;
+}
+.sub-headlines img {
+  border-radius: 50px;
+  width: 25px;
+  margin: 5px;
+  height: 25px;
+  background-color: orangered;
+  padding: 5px;
+}
+.text {
+  font-size: 22px;
+  padding: 10px;
+  color: #bbb;
+  margin-top: 30px;
+  font-weight: 100;
+}
+.action-btns {
+  margin-top: 20px;
+  margin-left: 5%;
+}
+.action-btn {
+  margin: auto 30px;
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-size: 25px;
+  background-color: orangered;
+  color: white;
+}
+@media only screen and (max-width: 480px) {
+  .left-section {
+    width: 80%;
+    margin: auto;
+  }
+  .left-section h3 {
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+  }
+  .left-section h1 {
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .sub-headline {
+    padding: 0 8px;
+    font-size: 18px;
+    margin-left: 10%;
+  }
+  .sub-headlines img {
+    width: 20px;
+    height: 20px;
+  }
+  .sub-headline h5 {
+    font-size: 18x;
+  }
+  .text {
+    font-size: 20px;
+    text-align: center;
+  }
+  .action-btn {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+  .action-btns {
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+  }
+}
+/* right */
+.right-section {
+  width: 40%;
+  position: relative;
+}
+.headphone-div {
+  position: relative;
+  left: 50px;
+}
+.discount {
+  position: absolute;
+  top: 340px;
+  left: -50px;
+  z-index: 1;
+}
+.discount-content {
+  z-index: 2;
+  color: white;
+  font-size: 30px;
+  top: 380px;
+  left: -20px;
+  position: absolute;
+}
+.action-btn-s {
+  margin: auto 30px;
+  width: 250px;
+  height: 50px;
+  border-radius: 30px;
+  border: none;
+  font-size: 25px;
+  background-color: orangered;
+  color: white;
+}
+.discount-content h4 {
+  font-size: 25px;
+  text-align: center;
+}
+.discount-content h1 {
+  font-weight: bolder;
+  -webkit-text-stroke: 3px white;
+  -webkit-text-fill-color: white;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+}
+.dot {
+  margin: auto 30px;
+}
+.yellow-dot {
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  background-color: yellow;
+  padding: 5px;
+}
+.tomato-dot {
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  background-color: orangered;
+  padding: 5px;
+}
+.black-dot {
+  border-radius: 50px;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  padding: 5px;
+}
+.add {
+  margin-left: 35%;
+  margin-top: 30px;
+}
+@media only screen and (max-width: 480px) {
+  .right-section {
+    width: 100%;
+    margin: auto;
+  }
+  .headphone-div {
+    left: 0;
+    top: 15px;
+  }
+  .discount {
+    left: 0;
+    width: 100px;
+    top: 160px;
+  }
+  .discount-content {
+    left: 20px;
+    top: 190px;
+  }
+  .headphone {
+    width: 90%;
+    margin: auto;
+  }
+  .dot {
+    margin: 30px 20px;
+  }
+  .add {
+    /* margin-left: 40%; */
+    margin-top: 0;
+  }
+  .discount-content h4 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .action-btn-s {
+    font-size: 16px;
+    margin: 0 80px;
+    width: 200px;
+  }
+  .discount-content h1 {
+    /* font-weight: bolder; */
+    font-size: 20px;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: white;
+  }
+}
